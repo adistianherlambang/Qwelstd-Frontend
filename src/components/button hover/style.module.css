@@ -6,6 +6,7 @@
   gap: 12px;
   align-items: center;
   cursor: pointer;
+  position: relative;
 }
 
 .container:hover {
@@ -13,13 +14,23 @@
   transition: ease 300ms;
 }
 
-.text {
+.textWrapper {
   display: flex;
+  overflow: hidden;
+}
+
+.textWrapper2 {
+  z-index: 2;
+  overflow: hidden;
+  position: absolute;
 }
 
 .box {
   width: 28px;
   height: 28px;
-  background-color: #EE3E75;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms ease;
 }
