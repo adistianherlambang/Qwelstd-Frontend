@@ -1,0 +1,25 @@
+.container{
+  display: flex;
+  background-color: #23297F;
+  padding: 0 8px;
+  border-radius: 4px;
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container:hover {
+  background-color: #2A32A8;
+  transition: ease 300ms;
+}
+
+.text {
+  display: flex;
+}
+
+.box {
+  width: 28px;
+  height: 28px;
+  background-color: #EE3E75;
+  border-radius: 4px;
+}
