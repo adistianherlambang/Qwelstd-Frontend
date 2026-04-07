@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 80px;
+  margin-bottom: 20rem;
 }
 
 .header {
@@ -49,6 +50,7 @@
   text-transform: uppercase;
   font-size: 32px;
   line-height: 1;
+  font-weight: 500;
 }
 
 .desc {
@@ -57,4 +59,71 @@
 
 .textPink {
   color: #EC3D76
+}
+
+.problemWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.problem {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.frameworkContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.frameworkWrapper {
+  padding: 24px 16px;
+  border-radius: 4;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.framework {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.frameworkDesc {
+  font-size: 12px;
+  color: #B3B3B3
+}
+
+.frameworkIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #23297F;
+  border-radius: 4;
+}
+
+.solusiWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.solusiTitle {
+  display: flex;
+  gap: 16px;
+}
+
+.solusiSection {
+  color: #b3b3b3;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
