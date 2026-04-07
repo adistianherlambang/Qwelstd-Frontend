@@ -27,17 +27,17 @@ export default function Home() {
         </Title>
       </div>
       <Morph/>
-      <p>QwelStudio adalah jasa kreatif digital yang fokus pada branding, desain visual, dan content marketing untuk UMKM, membantu membangun identitas brand dan strategi pemasaran yang efektif.</p>
+      <p className="desc">QwelStudio adalah jasa kreatif digital yang fokus pada branding, desain visual, dan content marketing untuk UMKM, membantu membangun identitas brand dan strategi pemasaran yang efektif.</p>
+      <p className="trust">
+        Dipercaya UMKM 🚀 untuk meningkatkan branding 🎯 dan penjualan digital 📈 
+      </p>
       <div className="contentContainer">
         <div className="contentWrapper">
           <ClientOnly><TopSection>Masalah<b>UMKM</b></TopSection></ClientOnly>
-          <Title>
-            <div className="title">
-              Jasa <span className="textPink">Kelola Sosial Media</span> & <span className="textPink">Branding UMKM </span>Profesional
-            </div>
-          </Title>
+          <div className="title">
+            Kenapa Banyak UMKM <span className="textPink">Sulit Berkembang </span>di Digital?
+          </div>
         </div>
-
       </div>
     </div>
   );
