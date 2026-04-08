@@ -28,7 +28,3 @@ body {
   color: var(--foreground);
   font-family: inherit;
 }
-
-* {
-  font-family: inherit;
-}
