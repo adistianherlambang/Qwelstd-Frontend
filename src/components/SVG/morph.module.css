@@ -1,0 +1,15 @@
+.svg {
+  scale: 1;
+  transition: 300ms ease;
+  cursor: pointer;
+  filter: drop-shadow(0 4px 10px rgba(236,61,118,0));
+}
+
+.svg:hover {
+  scale: 1.2
+}
+
+.svg:active {
+  scale: 1;
+  filter: drop-shadow(0 4px 20px rgba(236,61,118,1));
+}
