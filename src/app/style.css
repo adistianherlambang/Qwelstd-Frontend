@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   gap: 80px;
-  margin-bottom: 20rem;
 }
 
 .header {
@@ -140,4 +139,106 @@
 .solusiItem:hover {
   padding-left: 8px;
   color: white;
+}
+
+.ctaContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 300ms ease;
+  scale: 1;
+}
+
+.cta:hover {
+  padding-right: 0px;
+  scale: 1.02;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-bottom: 2rem;
+}
+
+.footerTitle {
+  text-transform: uppercase;
+}
+
+.footerNavContainer {
+  display: flex;
+  gap: 32px
+}
+
+.footerNavWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footerNavTitle {
+  color: #B3B3B3;
+}
+
+.footerNav a {
+  cursor: pointer;
+  color: white;
+  transition: 300ms ease;
+}
+
+.footerNav a:hover {
+  color: #EC3D76;
+}
+
+.sosmed {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 300ms ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sosmed:hover {
+  color: black;
+  padding-right: 0px;
+  background-color: white;
+}
+
+.sosmedIcon {
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #B3B3B3;
 }

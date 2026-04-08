@@ -2,6 +2,7 @@ import Image from "next/image";
 import "./style.css"
 
 import MainLogo from "@/components/logo/MainLogo";
+import BigLogo from "@/components/logo/BigLogo";
 import ButtonHover from "@/components/button hover/buttonHover";
 import TopSection from "@/components/section/top section/TopSection";
 import ClientOnly from "@/components/client/ClientOnly";
@@ -190,6 +191,58 @@ export default function Home() {
             <hr />
           </div>
         </div>
+      </div>
+      <div className="ctaContainer">
+        <Title>
+          <div className="title">
+            Siap <span className="textPink">Meningkatkan Branding</span> dan <span className="textPink">Penjualan Bisnis</span> Kamu?
+          </div>
+        </Title>
+        <div className="cta">
+          <p>Konsultasi Gratis via WhatsApp</p>
+          <div>
+            <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.75 5.25L12.75 5.25M12.75 5.25L8.25 9.75M12.75 5.25L8.25 0.75" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div className="footerContainer">
+        <p className="footerTitle">Jasa Kelola Sosial Media dan Branding UMKM Profesional</p>
+        <div className="footerNavContainer">
+          <div className="footerNavWrapper">
+            <p className="footerNavTitle">Quick Access</p>
+            <div className="footerNav">
+              <a href="">Tentang Kami</a>
+              <a href="">Masalah UMKM</a>
+              <a href="">Framework Visual</a>
+              <a href="">Solusi UMKM</a>
+            </div>
+          </div>
+          <div className="footerNavWrapper">
+            <p className="footerNavTitle">Social Media</p>
+            <div className="footerNav">
+              <div className="sosmed">
+                <p>Instagram</p>
+                <div className="sosmedIcon">
+                  <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.75 5.25L12.75 5.25M12.75 5.25L8.25 9.75M12.75 5.25L8.25 0.75" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="sosmed">
+                <p>Tiktok</p>
+                <div className="sosmedIcon">
+                  <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.75 5.25L12.75 5.25M12.75 5.25L8.25 9.75M12.75 5.25L8.25 0.75" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <BigLogo/>
+        <p className="copyright">© Copyright qwelstd 2026</p>
       </div>
     </div>
   );
