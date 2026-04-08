@@ -29,7 +29,7 @@ export default function Home() {
       <Morph/>
       <p className="desc">QwelStudio adalah jasa kreatif digital yang fokus pada branding, desain visual, dan content marketing untuk UMKM, membantu membangun identitas brand dan strategi pemasaran yang efektif.</p>
       <p className="trust">
-        Dipercaya UMKM 🚀 untuk meningkatkan branding 🎯 dan penjualan digital 📈 
+        Dipercaya <b>UMKM</b> untuk meningkatkan branding dan penjualan digital 
       </p>
       <div className="contentContainer">
         <div className="contentWrapper">
@@ -145,46 +145,48 @@ export default function Home() {
         </div>
         <div className="solusiWrapper">
           <div className="solusiTitle">
-            <p>01</p>
+            <b>01</b>
             <p>Jasa Branding UMKM</p>
           </div>
           <p>Membangun identitas brand yang kuat, konsisten, dan mudah dikenali untuk meningkatkan kepercayaan pelanggan.</p>
           <div className="solusiSection">
-            <p>Logo Design</p>
+            <p className="solusiItem">Logo Design</p>
             <hr />
-            <p>Brand identity</p>
+            <p className="solusiItem">Brand identity</p>
             <hr />
-            <p>Brand guideline</p>
+            <p className="solusiItem">Brand guideline</p>
             <hr />
           </div>
         </div>
         <div className="solusiWrapper">
           <div className="solusiTitle">
-            <p>01</p>
-            <p>Jasa Branding UMKM</p>
+            <b>02</b>
+            <p>Jasa Social Media Management</p>
           </div>
-          <p>Membangun identitas brand yang kuat, konsisten, dan mudah dikenali untuk meningkatkan kepercayaan pelanggan.</p>
+          <p>Mengelola media sosial secara profesional agar lebih aktif, terarah, dan meningkatkan engagement serta penjualan.</p>
           <div className="solusiSection">
-            <p>Logo Design</p>
+            <p className="solusiItem">Content Planning</p>
             <hr />
-            <p>Brand identity</p>
+            <p className="solusiItem">Desain Feed</p>
             <hr />
-            <p>Brand guideline</p>
+            <p className="solusiItem">Caption & Hashtag</p>
+            <hr />
+            <p className="solusiItem">Posting</p>
             <hr />
           </div>
         </div>
         <div className="solusiWrapper">
           <div className="solusiTitle">
-            <p>01</p>
-            <p>Jasa Branding UMKM</p>
+            <b>03</b>
+            <p>Jasa Konten Instagram & TikTok</p>
           </div>
-          <p>Membangun identitas brand yang kuat, konsisten, dan mudah dikenali untuk meningkatkan kepercayaan pelanggan.</p>
+          <p>Membuat konten kreatif dan menarik untuk meningkatkan awareness dan daya tarik brand di platform digital.</p>
           <div className="solusiSection">
-            <p>Logo Design</p>
+            <p className="solusiItem">Desain Konten</p>
             <hr />
-            <p>Brand identity</p>
+            <p className="solusiItem">Foto Produk</p>
             <hr />
-            <p>Brand guideline</p>
+            <p className="solusiItem">Video Reels</p>
             <hr />
           </div>
         </div>
