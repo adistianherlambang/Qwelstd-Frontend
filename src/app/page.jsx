@@ -3,15 +3,19 @@ import "./style.css"
 
 import MainLogo from "@/components/logo/MainLogo";
 import BigLogo from "@/components/logo/BigLogo";
-import ButtonHover from "@/components/button hover/buttonHover";
+import ButtonHover from "@/components/button/buttonHover";
 import TopSection from "@/components/section/top section/TopSection";
 import ClientOnly from "@/components/client/ClientOnly";
 import Title from "@/components/section/title/Title";
 import Morph from "@/components/SVG/morph";
 import Nav, {NavOpen} from "@/components/nav/Nav";
 import Background from "@/components/background/Background";
+import ButtonLink from "@/components/button/buttonLink";
 
 export default function Home() {
+
+  const year = new Date().getFullYear()
+
   return (
     <>
     <Background/>
@@ -20,7 +24,7 @@ export default function Home() {
         <MainLogo/>
         <Nav/>
       </div>
-      <div className="contentWrapper">
+      <div className="contentWrapper" id="tentang">
         <ClientOnly><TopSection>Sahabat<b>UMKM</b></TopSection></ClientOnly>
         <Title>
           <div className="title">
@@ -33,7 +37,7 @@ export default function Home() {
       <p className="trust">
         Dipercaya <b>UMKM</b> untuk meningkatkan branding dan penjualan digital 
       </p>
-      <div className="contentContainer">
+      <div className="contentContainer" id="masalah">
         <div className="contentWrapper">
           <ClientOnly><TopSection>Masalah<b>UMKM</b></TopSection></ClientOnly>
           <Title>
@@ -69,7 +73,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="contentContainer">
+      <div className="contentContainer" id="framework">
         <div className="contentWrapper">
           <ClientOnly><TopSection>Framework Visual</TopSection></ClientOnly>
           <Title>
@@ -136,12 +140,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="contentContainer">
+      <div className="contentContainer" id="layanan">
         <div className="contentWrapper" style={{alignItems: "center", textAlign: "center"}}>
-          <ClientOnly><TopSection>Masalah<b>UMKM</b></TopSection></ClientOnly>
+          <ClientOnly><TopSection><b>Layanan </b> Kami</TopSection></ClientOnly>
           <Title>
             <div className="title">
-              Kenapa Banyak UMKM <span className="textPink">Sulit Berkembang </span>di Digital?
+              Apa yang <span className="textPink">Kami Tawarkan</span>
             </div>
           </Title>
         </div>
@@ -199,14 +203,16 @@ export default function Home() {
             Siap <span className="textPink">Meningkatkan Branding</span> dan <span className="textPink">Penjualan Bisnis</span> Kamu?
           </div>
         </Title>
-        <div className="cta">
-          <p>Konsultasi Gratis via WhatsApp</p>
-          <div>
-            <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.75 5.25L12.75 5.25M12.75 5.25L8.25 9.75M12.75 5.25L8.25 0.75" stroke="#121212" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+        <ButtonLink target={"https://api.whatsapp.com/send/?phone=6282179537326&text&type=phone_number&app_absent=0"}>
+          <div className="cta">
+            <p>Konsultasi Gratis via WhatsApp</p>
+            <div>
+              <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.75 5.25L12.75 5.25M12.75 5.25L8.25 9.75M12.75 5.25L8.25 0.75" stroke="#121212" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
           </div>
-        </div>
+        </ButtonLink>
       </div>
       <div className="footerContainer">
         <p className="footerTitle">Jasa Kelola Sosial Media dan Branding UMKM Profesional</p>
@@ -214,36 +220,40 @@ export default function Home() {
           <div className="footerNavWrapper">
             <p className="footerNavTitle">Quick Access</p>
             <div className="footerNav">
-              <a href="">Tentang Kami</a>
-              <a href="">Masalah UMKM</a>
-              <a href="">Framework Visual</a>
-              <a href="">Solusi UMKM</a>
+              <a href="#tentang">Tentang Kami</a>
+              <a href="#masalah">Masalah UMKM</a>
+              <a href="#framework">Framework Visual</a>
+              <a href="#layanan">Layanan Kami</a>
             </div>
           </div>
           <div className="footerNavWrapper">
             <p className="footerNavTitle">Social Media</p>
             <div className="footerNav">
-              <div className="sosmed">
-                <p>Instagram</p>
-                <div className="sosmedIcon">
-                  <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.75 5.25L12.75 5.25M12.75 5.25L8.25 9.75M12.75 5.25L8.25 0.75" stroke="#121212" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
+              <ButtonLink target={"https://www.instagram.com/qwelstd/"}>  
+                <div className="sosmed">
+                  <p>Instagram</p>
+                  <div className="sosmedIcon">
+                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.75 5.25L12.75 5.25M12.75 5.25L8.25 9.75M12.75 5.25L8.25 0.75" stroke="#121212" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
                 </div>
-              </div>
-              <div className="sosmed">
-                <p>Tiktok</p>
-                <div className="sosmedIcon">
-                  <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.75 5.25L12.75 5.25M12.75 5.25L8.25 9.75M12.75 5.25L8.25 0.75" stroke="#121212" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
+              </ButtonLink>
+              <ButtonLink target={"https://www.tiktok.com"}>
+                <div className="sosmed">
+                  <p>Tiktok</p>
+                  <div className="sosmedIcon">
+                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.75 5.25L12.75 5.25M12.75 5.25L8.25 9.75M12.75 5.25L8.25 0.75" stroke="#121212" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
                 </div>
-              </div>
+              </ButtonLink>
             </div>
           </div>
         </div>
         <BigLogo/>
-        <p className="copyright">© Copyright qwelstd 2026</p>
+        <p className="copyright">© Copyright qwelstd {year}</p>
       </div>
     </div>
     </>

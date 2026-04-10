@@ -3,7 +3,8 @@
 import React, {useState, useRef, useEffect, Children} from 'react'
 import styles from "./style.module.css"
 
-import ButtonHover from '../button hover/buttonHover'
+import ButtonHover from '../button/buttonHover'
+import ButtonLink from '../button/buttonLink'
 import TextScramble from '../scramble/Scramble'
 
 export default function Nav() {
@@ -48,10 +49,10 @@ export function NavOpen({ open, setOpen, render }) {
   const [visibleItems, setVisibleItems] = useState([])
 
   const links = [
-    { label: "Tentang Kami", href: "#" },
-    { label: "Masalah UMKM", href: "#" },
-    { label: "Framework Visual", href: "#" },
-    { label: "Solusi UMKM", href: "#" },
+    { label: "Tentang Kami", href: "#tentang" },
+    { label: "Masalah UMKM", href: "#masalah" },
+    { label: "Framework Visual", href: "#framework" },
+    { label: "Solusi UMKM", href: "#layanan" },
   ]
 
   useEffect(() => {
@@ -84,7 +85,7 @@ export function NavOpen({ open, setOpen, render }) {
         {links.map((item, index) => {
           if (!visibleItems.includes(index)) return null
           return(
-            <div onClick={() => setOpen(false)} className={styles.item}><TextScramble start={open}><a>{item.label}</a><br/></TextScramble></div>
+            <div key={index} onClick={() => setOpen(false)} className={styles.item}><TextScramble start={open}><a href={item.href}>{item.label}</a><br/></TextScramble></div>
           )
         })}
       </div>

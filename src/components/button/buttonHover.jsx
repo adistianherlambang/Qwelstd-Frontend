@@ -10,6 +10,7 @@ export default function ButtonHover( {children} ) {
   
   return (
     <div
+      onClick={() => window.open("https://api.whatsapp.com/send/?phone=6282179537326&text&type=phone_number&app_absent=0")}
       className={styles.container}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
