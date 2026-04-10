@@ -1,27 +1,34 @@
 "use client"
 import React, { useState, useEffect, useRef } from "react"
 import styles from "./style.module.css"
+import ScrollTrigger from "gsap/ScrollTrigger"
+import gsap from "gsap"
+
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Title({ children }) {
-  const [visible, setVisible] = useState(false)
+
   const ref = useRef(null)
 
   useEffect(() => {
     if (!ref.current) return
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true)
-          observer.disconnect() // hentikan observasi setelah terlihat
+    const el = ref.current.querySelector(`.${styles.wrapper}`)
+
+    gsap.fromTo(
+      el,
+      { y: 150 },
+      {
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ref.current,
+          start: "top 80%",   // saat masuk viewport
+          toggleActions: "play none none none",
         }
-      },
-      { threshold: 0.1 } // trigger ketika 10% terlihat
+      }
     )
-
-    observer.observe(ref.current)
-
-    return () => observer.disconnect()
   }, [])
 
   return (
@@ -29,7 +36,7 @@ export default function Title({ children }) {
       ref={ref}
       className={styles.container}
     >
-      <div className={styles.wrapper}>{visible ? children : null}</div>
+      <div className={`${styles.wrapper}`}>{children}</div>
     </div>
   )
 }

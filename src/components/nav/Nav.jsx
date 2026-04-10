@@ -30,8 +30,8 @@ export default function Nav() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.nav} onClick={() => setOpen(!open)}>
-        <div className={styles.navButton}>
+      <div className={styles.nav}>
+        <div className={styles.navButton} onClick={() => setOpen(!open)}>
           <hr className={styles.hamburger}/>
           <hr className={styles.hamburger}/>
           <hr className={styles.hamburger}/>

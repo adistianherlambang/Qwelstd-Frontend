@@ -9,9 +9,12 @@ import ClientOnly from "@/components/client/ClientOnly";
 import Title from "@/components/section/title/Title";
 import Morph from "@/components/SVG/morph";
 import Nav, {NavOpen} from "@/components/nav/Nav";
+import Background from "@/components/background/Background";
 
 export default function Home() {
   return (
+    <>
+    <Background/>
     <div className="container">
       <div className="header">
         <MainLogo/>
@@ -243,5 +246,6 @@ export default function Home() {
         <p className="copyright">© Copyright qwelstd 2026</p>
       </div>
     </div>
+    </>
   );
 }
