@@ -1,0 +1,155 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  transition: 300ms ease;
+}
+
+.overlayOpen {
+  animation: overlay 300ms ease;
+  opacity: 0.5;
+}
+
+.overlayClose {
+  animation: overlayClose 300ms ease;
+}
+
+@keyframes overlay {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0.5;
+  }
+}
+
+@keyframes overlayClose {
+  0%{
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.navOpen {
+  position: absolute;
+  top: 100%;
+  margin-top: 1rem;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  transition: 300ms ease;
+  overflow: hidden;
+
+  max-height: 0;
+  padding: 0 8px;
+
+  transition: 300ms ease;
+}
+
+.navOpenAnim {
+  max-height: 500px; /* harus lebih besar dari konten */
+  padding: 8px;
+}
+
+@keyframes navOpen {
+  from {
+    /* opacity: 0; */
+    height: 0%;
+    padding: 0 8px;
+  }
+  to {
+    height: fit-content;
+    padding: 8px;
+  }
+}
+
+.navCloseAnim {
+  animation: navClose 300ms ease;
+  height: 0px;
+}
+
+@keyframes navClose {
+  from {
+    height: 100%;
+    padding: 8px;
+  }
+  to {
+    /* opacity: 0; */
+    height: 0%;
+    padding: 0 8px;
+  }
+}
+
+.item {
+  padding: 8px 0;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 300ms ease;
+  cursor: pointer;
+  font-size: 14px;
+  animation: itemIn 300ms ease
+}
+
+.item:hover {
+  color: white;
+  padding-left: 8px;
+}
+
+@keyframes itemIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav {
+  padding: 4px;
+  display: flex;
+  gap: 8px;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 2;
+}
+
+.navButton {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 36px;
+  width: 36px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  cursor: pointer;
+  transition: 300ms ease;
+}
+
+.navButton:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.hamburger {
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}

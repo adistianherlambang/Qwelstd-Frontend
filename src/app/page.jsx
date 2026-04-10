@@ -8,16 +8,14 @@ import TopSection from "@/components/section/top section/TopSection";
 import ClientOnly from "@/components/client/ClientOnly";
 import Title from "@/components/section/title/Title";
 import Morph from "@/components/SVG/morph";
+import Nav, {NavOpen} from "@/components/nav/Nav";
 
 export default function Home() {
   return (
     <div className="container">
       <div className="header">
         <MainLogo/>
-        <div className="nav">
-          <div className="navButton"></div>
-          <ButtonHover>Kontak Kami</ButtonHover>
-        </div>
+        <Nav/>
       </div>
       <div className="contentWrapper">
         <ClientOnly><TopSection>Sahabat<b>UMKM</b></TopSection></ClientOnly>
